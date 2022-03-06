@@ -1,1 +1,1 @@
-# lowpass-video-stablizer-
+# lowpass-video-stablizer
