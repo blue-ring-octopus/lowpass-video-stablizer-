@@ -6,7 +6,7 @@ Created on Fri Jun  4 18:31:39 2021
 """
 import cv2
 import pyrealsense2 as rs
-from pupil_apriltags import Detector
+#from pupil_apriltags import Detector
 import numpy as np
 
 cv2.destroyAllWindows()
@@ -67,13 +67,13 @@ config.enable_stream(rs.stream.color, screenWidth, screenHeight, rs.format.bgr8,
 # Start streaming
 cfg=pipeline.start(config)
 cam_param=get_rs_param(cfg)
-at_detector = Detector(families='tag36h11',
-                       nthreads=1,
-                       quad_decimate=1.0,
-                       quad_sigma=0.0,
-                       refine_edges=1,
-                       decode_sharpening=0.25,
-                       debug=0)
+# at_detector = Detector(families='tag36h11',
+#                        nthreads=1,
+#                        quad_decimate=1.0,
+#                        quad_sigma=0.0,
+#                        refine_edges=1,
+#                        decode_sharpening=0.25,
+#                        debug=0)
 y_old=[None,None]
 des=[None, None]
 bf = cv2.BFMatcher()
